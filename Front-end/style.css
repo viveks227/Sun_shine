@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#homePage {
+    width: 100%;
+    height: 93vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("bg_img.png");
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a#home {
+  background-color: #04AA6D;
+  color: white;
+}
+/* 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 10px 15px 0px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+} */
+
+.navbar a#search {
+  float: center;
+  font-size: 16px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 20px 15px 10px 20px;
+  color: white;
+}
+
+.navbar a#search:hover {
+  background-color: none;
+  color: black;
+}
+
+.navbar .buttons {
+    float: right;
+}
+
+.navbar a#login {
+  
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar a#login:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
