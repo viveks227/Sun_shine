@@ -4,9 +4,9 @@
 }
 
 body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #8ba68b;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #homePage {
@@ -14,14 +14,14 @@ body {
     height: 93vh;
     background-size: cover;
     background-position: center;
-    background-image: url("bg_img.png");
+    background-image: url("image/home-page-img.png");
 }
 
 .navbar {
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #322413
 }
 
 .navbar a {
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar a#home {
-  background-color: #04AA6D;
+  background-color: #6e750e;
   color: white;
 }
 /* 
@@ -83,7 +83,7 @@ input[type=text]:focus {
 
 .navbar a#login {
   
-  background-color: #04AA6D;
+  background-color: #6e750e;
   color: white;
 }
 
