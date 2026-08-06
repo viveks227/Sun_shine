@@ -21,6 +21,7 @@ body {
   position: sticky;
   top: 0;
   overflow: hidden;
+  z-index: 9999;
   background-color: #322413
 }
 
@@ -118,3 +119,28 @@ input[type=text]:focus {
   background: red;
   color: white;
 }
+
+table {
+  border-spacing: 20px;
+}
+
+table.flowerTable tr td img {
+  width: 250px;
+  height: 350px;
+  display: grid;
+  object-fit: cover;
+  margin: 5px 13px;
+  border-radius: 20px;
+  aspect-ratio: 10/14;
+  animation: scroll 10s linear infinite;
+  border: 2px solid #483939;
+}
+/* 
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */
