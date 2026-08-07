@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <table id="loginForm">
+        <form action="login.php" method="post">
+            <tr>
+                <th colspan="2">Welcome Back!</th>
+            </tr>
+            
+            <tr>
+                <td><label>Username</label> <br/>
+                <input type="text" name="username" id="username" placeholder="Username" required></td>
+            </tr>
+            <tr>
+                <td><label>Password</label> <br/>
+                <input type="password" name="password" id="password" placeholder="Password" required></td>
+            </tr>
+
+            <!-- <tr>
+                <td id="check">
+                    <input type="checkbox" id="checkbox"/>Remember me
+                </td> -->
+
+                <td id="forget">Forget Password?</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><button type="submit">Log in</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="divider">
+                        <hr>
+                            <span>OR</span>
+                        <hr>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <button id="sinup">
+                        <i class="fa fa-google"> Sign in With Google    </i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Don't have an account? <a href="register.html">Register here</a></p></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

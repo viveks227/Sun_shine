@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+#loginForm {
+    width: 400px;
+    height: 550px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(236, 3, 3, 0.974);
+}
+
+#loginForm th {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 00px;
+    color: #ec0303;
+    padding-bottom: 70px;
+}
+
+#loginForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 2px 0px;
+}
+
+#loginForm #label {
+    margin-bottom: 20px;
+}
+
+#loginForm #check {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#loginForm #forget {
+    text-align: right;
+    font-size: 14px;
+    padding: 0px 0 20px;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #ec0303;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#sinup {
+    background-color: #ec0303;
+    color: #fcfcfc;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider hr{
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider span{
+    margin: 0 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+#loginForm p {
+    text-align: center;
+    font-size: 14px;
+}
