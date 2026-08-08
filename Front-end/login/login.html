@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="login.css">
+
+    <script src="login.js"></script>
 </head>
 <body>
+    <div id="login">
     <table id="loginForm">
         <form action="login.php" method="post">
             <tr>
@@ -28,7 +32,7 @@
                     <input type="checkbox" id="checkbox"/>Remember me
                 </td> -->
 
-                <td id="forget">Forget Password?</td>
+                <td id="forget"><a href="#" onclick="showForget()">Forget Password?</a></td>
             </tr>
             
             <tr>
@@ -49,14 +53,125 @@
             <tr>
                 <td>
                     <button id="sinup">
-                        <i class="fa fa-google"> Sign in With Google    </i>
+                         <i class="fa fa-google"> Sign in With Google   </i>
                     </button>
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><p>Don't have an account? <a href="register.html">Register here</a></p></td>
+                <td colspan="2"><p>Don't have an account? <a href="#" onclick="showRegister()">Register here</a></p></td>
             </tr>
         </form>
     </table>
+    </div>
+
+    <div id="registerForm">
+        <table>
+            <form action="" method="post">
+                <tr>
+                    <th>Create Account</th>
+                </tr>
+
+                <tr>
+                    <td>Name :</td>
+                    <td>
+                        <input type="text" placeholder="full name" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number :</td>
+                    <td>
+                        <input type="number" placeholder="number" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email Id :</td>
+                    <td>
+                        <input type="email" placeholder="mail id" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password :</td>
+                    <td>
+                        <input type="password" placeholder="enter password" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password :</td>
+                    <td>
+                        <input type="password" placeholder="confirm password" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                   <td colspan="2">
+                    <button>Register</button>
+                   </td> 
+                   <br/>
+                   <br/>
+                </tr>
+                <br/>
+
+                <tr>
+                    <td colspan="2">
+                        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a> </p>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+
+    <div id="forgetForm">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <th>Forget Password</th>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td>
+                        <input type="email" placeholder="mail id" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mobile no.</td>
+                    <td>
+                        <input type="number" placeholder="number" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Verify OTP</td>
+                    <td>
+                        <input type="number" placeholder="OTP" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>New Password</td>
+                    <td>
+                        <input type="password" placeholder="new password" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button>Submit</button>
+                    </td><br/>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <br/>
+                        <p>Return to <a href="#" onclick="showLogin()">Login</a></p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
