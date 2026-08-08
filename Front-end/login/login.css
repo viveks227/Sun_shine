@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #443a3a;
+    color: #b9b3b3;
+    font-family: Arial, sans-serif;
+}
+
+#loginForm, #registerForm, #forgetForm {
+    width: 400px;
+    height: 550px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(236, 3, 3, 0.974);
+}
+
+#loginForm th, #registerForm th, #forgetForm th{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 00px;
+    color: #ec0303;
+    padding-bottom: 70px;
+}
+
+#loginForm input, #registerForm input, #forgetForm input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ec0303;
+    border-radius: 12px;
+    margin: 2px 0px;
+}
+
+#loginForm input:hover, #registerForm input:hover, #forgetForm input:hover{
+    border: 3px solid #ec0303;
+    border-radius: 12px;
+}
+
+#loginForm #label {
+    margin-bottom: 20px;
+}
+
+#loginForm #check {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#loginForm #forget {
+    text-align: right;
+    font-size: 14px;
+    padding: 0px 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ec0303;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ec0303;
+    color: #ffffff;
+    border: 1px solid #ec0303;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #ec0303;
+    border: 3px solid #ec0303;
+}
+
+
+#sinup {
+    background-color: #ec0303;
+    color: #fcfcfc;
+}
+
+#sinup:hover {
+    background-color: #ffffff;
+    color: #ec0303;
+    border: 2px solid #ec0303;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider hr{
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider span{
+    margin: 0 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+#loginForm p, #register p, #forgetForm p{
+    text-align: center;
+    font-size: 14px;
+}
+
+#registerForm, #forgetForm {
+    display: none;
+    padding: 10px;
+}
