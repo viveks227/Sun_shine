@@ -3,49 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="flower.css">
+    <title>Flower-section</title>
+    <link rel="stylesheet" href="flower.css"/>
     <script src="flower.js"></script>
 </head>
 <body>
-    <h2>Your Flowers</h2>
-    <p>Click on the buttons to filter a catorgry</p>
-
-    <div class="filterButton">
-        <button class="btn" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('sunflower')"> Sunflower</button>
-        <button class="btn" onclick="filterSelection('rose')"> Rose</button>
-        <button class="btn" onclick="filterSelection('lily')"> Lily</button>
-        <button class="btn" onclick="filterSelection('tulip')"> Tulip</button>
-        <button class="btn" onclick="filterSelection('daisy')"> Daisy</button>
-        <button class="btn" onclick="filterSelection('lotus')"> Lotus</button>
-        <button class="btn" onclick="filterSelection('orchid')"> Orchid</button>
-        <button class="btn" onclick="filterSelection('hibiscus')"> Hibiscus</button>
-        <button class="btn" onclick="filterSelection('jasmine')"> Jasmine</button>
-        
+    <div id="filter-button">
+        <button class="btn">Show all</button>
+        <button class="btn">Sunflower</button>
+        <button class="btn">Rose</button>
+        <button class="btn">Tulip</button>
     </div>
 
-    <div class="row">
-        <div class="column sunflower">
-            <div class="content">
-                <img src="images/sunflower.jpg" alt="Sunflower" style="width:100%">
-                <h4>Sunflower</h4>
-                <p></p>
-            </div>
+    <div id="gallery">
+        <div class="gallery-item">
+            <img src="../flower-img/sunflower1.jpg" alt="Sunflower">
         </div>
-        <div class="coumn sunflower">
-            <div class="content">
-                <img src="images/sunflower.jpg" alt="Sunflower" style="width:100%">
-                <h4>Sunflower</h4>
-                <p></p>
-            </div>
+        <div class="gallery-item">
+            <img src="../flower-img/sunflower2.jpg" alt="Sunflower">
         </div>
-        <div class="coulmn sunflower">
-            <div class="content">
-                <img src="images/sunflower.jpg" alt="Sunflower" style="width:100%">
-                <h4>Sunflower</h4>
-                <p></p>
-            </div>
+        <div class="gallery-item">
+            <img src="../flower-img/sunflower3.jpg" alt="Sunflower">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/sunflower4.jpg" alt="Sunflower">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/sunflower5.jpg" alt="Sunflower">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/sunflower6.jpg" alt="Sunflower">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/rose1.jpg" alt="Rose">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/rose2.jpg" alt="Rose">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/rose3.jpg" alt="Rose">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/rose4.jpg" alt="Rose">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/rose5.jpg" alt="Rose">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/rose6.jpg" alt="Rose">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/daisy1.jpg" alt="Daisy">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/daisy2.jpg" alt="Daisy">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/daisy3.jpg" alt="Daisy">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/daisy4.jpg" alt="Daisy">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/daisy5.jpg" alt="Daisy">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/daisy6.jpg" alt="Daisy">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/hibiscus1.jpg" alt="Hibiscus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/hibiscus2.jpg" alt="Hibiscus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/hibiscus3.jpg" alt="Hibiscus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/hibiscus4.jpg" alt="Hibiscus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/hibiscus5.jpg" alt="Hibiscus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/hibiscus6.jpg" alt="Hibiscus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/jasmin1.jpg" alt="Jasmin">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/jasmin2.jpg" alt="Jasmin">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/jasmin3.jpg" alt="Jasmin">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/jasmin4.jpg" alt="Jasmin">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/jasmin5.jpg" alt="Jasmin">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/jasmin6.jpg" alt="Jasmin">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/lily1.jpg" alt="Lily">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lily2.jpg" alt="Lily">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lily3.jpg" alt="Lily">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lily4.jpg" alt="Lily">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lily5.jpg" alt="Lily">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lily6.jpg" alt="Lily">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/lotus1.jpg" alt="Lotus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lotus2.jpg" alt="Lotus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lotus3.jpg" alt="Lotus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lotus4.jpg" alt="Lotus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lotus5.jpg" alt="Lotus">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/lotus6.jpg" alt="Lotus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/orchid1.jpg" alt="Orchid">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/orchid2.jpg" alt="Orchid">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/orchid3.jpg" alt="Orchid">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/orchid4.jpg" alt="Orchid">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/orchid5.jpg" alt="Orchid">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/orchid6.jpg" alt="Orchid">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../flower-img/tulip1.jpg" alt="Tulip">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/tulip2.jpg" alt="Tulip">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/tulip3.jpg" alt="Tulip">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/tulip4.jpg" alt="Tulip">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/tulip5.jpg" alt="Tulip">
+        </div>
+        <div class="gallery-item">
+            <img src="../flower-img/tulip6.jpg" alt="Tulip">
         </div>
     </div>
 </body>
