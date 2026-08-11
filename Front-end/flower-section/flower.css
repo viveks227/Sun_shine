@@ -1,4 +1,4 @@
-  body {
+body {
   background-color: #8ba68b;
 }
 
@@ -38,7 +38,6 @@
   background-color: rgba(0,0,0,0.5);
   width: 100%;
   transition: 3s ease;
-  color: orange;
   opacity: 0;
   font-size: 25px;
   text-align: center;
@@ -46,4 +45,40 @@
 
 .gallery-item:hover .caption {
   opacity: 1;
+}
+
+.caption .sunflower {
+  color: rgb(251, 164, 3);
+}
+
+.caption .rose {
+  color: rgb(232, 47, 47);
+}
+
+.caption .daisy {
+  color: rgb(232, 124, 142);
+}
+
+.caption .hibiscus {
+  color: rgb(229, 117, 6);
+}
+
+.caption .jasmin {
+  color: rgb(245, 222, 179);
+}
+
+.caption .lily {
+  color: rgb(211, 78, 78);
+}
+
+.caption .lotus {
+  color: rgb(255, 192, 203);
+}
+
+.caption .orchid {
+  color: rgb(212, 102, 212);
+}
+
+.caption .tulip {
+  color: rgb(207, 124, 64);
 }
