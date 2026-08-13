@@ -119,6 +119,42 @@ input[type=text]:focus {
   background: red;
   color: white;
 }
+
+/* Flower Section */
+
+.flowerRow {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.flowerText {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.flowerText h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.flowerText p {
+  margin-top: 95px;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.flowerImg img {
+  height: 50vh;
+  width: 25vw;
+  display: block;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 30px;
+}
 /* 
 @keyframes scroll {
   from {
