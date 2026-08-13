@@ -126,6 +126,7 @@ input[type=text]:focus {
   width: 80%;
   max-width: 1200px;
   margin: 30px auto;
+  border-radius: 20px;
 }
 
 .flowerRow {
@@ -136,7 +137,7 @@ input[type=text]:focus {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 20px green; 
 }
 
 .flowerText {
@@ -147,7 +148,7 @@ input[type=text]:focus {
 
 .flowerText span {
   color: #e8a900;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -174,6 +175,9 @@ input[type=text]:focus {
   width: 40%;
 }
 
+
+
+
 .flowerImg img {
   height: 50vh;
   width: 25vw;
@@ -181,6 +185,12 @@ input[type=text]:focus {
   object-fit: cover;
   border: 2px solid black;
   border-radius: 20px;
+  box-shadow: 0 0 20px green; 
+  transition: 0.5s ease;
+}
+
+.flowerImg img:hover {
+  transform: scale(1.1);
 }
 
 .flowerText button {
@@ -192,6 +202,7 @@ input[type=text]:focus {
   margin: 20px 0 0 30px;
   font-size: 15px;
   padding: 12px 20px;
+  box-shadow: 0 0 10px green; 
 }
 
 .flowerText button:hover {
