@@ -122,28 +122,56 @@ input[type=text]:focus {
 
 /* Flower Section */
 
+#flowerSection {
+  width: 80%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
 .flowerRow {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin: 50px 0 25px 0;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .flowerText {
-  font-size: 25px;
+  width: 65%;
+  padding: 40px 100px;
   display: inline-block;
+}
+
+.flowerText span {
+  color: #e8a900;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .flowerText h2 {
   text-align: center;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 32px;
+  color: green;
 }
 
 .flowerText p {
   margin-top: 95px;
   text-align: justify;
   font-family: "Times New Roman", Times, serif;
+  margin: 20px 0;
+  line-height: 1.7;
+  font-size: 20px;
+  color: #333;
+}
+
+.flowerImg {
+  width: 40%;
 }
 
 .flowerImg img {
@@ -153,7 +181,28 @@ input[type=text]:focus {
   object-fit: cover;
   border: 2px solid black;
   border-radius: 20px;
-  margin-right: 30px;
+}
+
+.flowerText button {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0 0 30px;
+  font-size: 15px;
+  padding: 12px 20px;
+}
+
+.flowerText button:hover {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+.flowerRow.reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 /* 
 @keyframes scroll {
