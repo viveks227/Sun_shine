@@ -120,7 +120,11 @@ input[type=text]:focus {
   color: white;
 }
 
-/* Flower Section */
+/*Gallery Section */
+
+#galleryS {
+  background-color: hsla(120, 28%, 59%, 40%);
+}
 
 #gallerySection {
   width: 80%;
@@ -131,8 +135,8 @@ input[type=text]:focus {
 
 #gallerySection #title {
   text-align: center;
-  font-size: 40px;
-  color: greenyellow;
+  font-size: 50px;
+  color: rgb(31, 86, 213);
   font-family: 'Times New Roman', Times, serif;
 }
 
