@@ -122,9 +122,9 @@ input[type=text]:focus {
 
 /* About-Us Section */
 
-#aboutSectioon {
-  width: 90%;
-  max-width: 1300px;
+#aboutSection {
+  width: 98%;
+  max-width: 1400px;
   margin: 80px auto;
 }
 
@@ -218,6 +218,8 @@ input[type=text]:focus {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
+  border: 2px solid rgba(235, 163, 19, 0.925);
+  box-shadow: 0 0 10px rgba(255, 166, 0, 0.868);
 }
 
 #aboutImg img {
