@@ -120,6 +120,138 @@ input[type=text]:focus {
   color: white;
 }
 
+/* About-Us Section */
+
+#aboutSectioon {
+  width: 90%;
+  max-width: 1300px;
+  margin: 80px auto;
+}
+
+#aboutHeading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#aboutHeading span {
+  color: #e8a900;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+#aboutHeading h2 {
+  color: #245c20;
+  font-size: 45px;
+  margin: 10px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sunflowerIcon {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+#aboutContent {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #fffdf5;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0,0.7);
+}
+
+#abouText {
+  width: 50%;
+}
+
+#aboutStory {
+  color: #e8a900;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#aboutText h3 {
+  color: #245c20;
+  font-size: 34px;
+  line-height: 1.3;
+  margin: 15px 0 25px;
+  font-family: Georgia, serif;
+}
+
+.aboutText p {
+  color: #444;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.aboutHighlight {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.highlight {
+  flex: 1;
+}
+
+.highlight span {
+  font-size: 25px;
+}
+
+.highlight h4 {
+  color: #245c20;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.highlight p {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+#aboutImg {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+#aboutImg img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+#aboutImg:hover img {
+  transform: scale(1.08);
+}
+
+#aboutImgText {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+}
+
+#aboutImgText h2 {
+  font-size: 60px;
+  font-family: cursive;
+  margin: 0;
+}
+
+#aboutImgText p {
+    font-size: 25px;
+    margin: 0;
+}
+
+
 /*Gallery Section */
 
 #galleryS {
