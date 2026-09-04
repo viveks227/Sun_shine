@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
-    background-color: #8ba68b;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #8fa88f;
 }
 
 #homePage {
@@ -435,7 +440,8 @@ input[type=text]:focus {
 
 #contactSection {
   width: 100%;
-  padding: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 
 
@@ -443,7 +449,8 @@ input[type=text]:focus {
 
 .contactContainer {
   width: 100%;
-  margin: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -787,4 +794,244 @@ input[type=text]:focus {
   color: #777;
   font-size: 10px;
   line-height: 1.4;
+}
+
+
+/* Footer section */
+
+
+#webFooter {
+  width: 100%;
+  background: #082b13;
+  color: #ffffff;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+#mainFooter {
+  padding: 60px 50px 45px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+  margin-top: 0;
+  gap: 50px;
+}
+
+#footerHead {
+  max-width: 560px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#footerIcon {
+  font-size: 42px;
+}
+
+.footerLogo h2 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 30px;
+  color: #f5c542;
+}
+
+.footerLogo p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #d8dfd2;
+}
+
+.footerAbout {
+  margin-top: 22px;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #cbd8ca;
+}
+
+.footerSocial {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.footerSocial a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #70866a;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footerSocial a:hover {
+  background: #f5c542;
+  color: #082b13;
+  border-color: #f5c542;
+  transform: translateY(-5px);
+}
+
+.footerColumn h3 {
+  position: relative;
+  margin: 0 0 22px;
+  color: #f5c542;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 19px;
+}
+
+.footerColumn h3::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  background: #f5c542;
+  margin-top: 8px;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn li {
+  margin-bottom: 13px;
+}
+
+.footerColumn li a {
+  color: #d5ded3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footerColumn li a:hover {
+  color: #f5c542;
+  padding-left: 7px;
+}
+
+.footerContact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 17px;
+  color: #d5ded3;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footerContact i {
+  color: #f5c542;
+  width: 18px;
+  margin-top: 3px;
+}
+
+.footerContact a {
+  color: #d5ded3;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footerContact a:hover {
+  color: #f5c542;
+}
+
+.footerDes {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footerDes h3 {
+  margin: 0 0 6px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footerDes p {
+  margin: 0;
+  color: #bfcabd;
+  font-size: 13px;
+}
+
+.footerForm {
+  display: flex;
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 400px;
+}
+
+.footerForm input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 13px 15px;
+  font-size: 14px;
+}
+
+.footerForm button {
+  border: none;
+  background: #f5c542;
+  color: #082b13;
+  font-weight: bold;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footerForm button:hover {
+    background: #ffffff;
+}
+
+.footerBottom {
+  max-width: 1300px;
+  margin: auto;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerBottom p {
+  margin: 0;
+  font-size: 13px;
+  color: #bfcabd;
+}
+
+.footerBottom strong {
+  color: #f5c542;
+}
+
+.footerPolicies {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footerPolicies a {
+  color: #bfcabd;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footerPolicies a:hover {
+  color: #f5c542;
+}
+
+.footerPolicies span {
+  color: #667763;
 }
