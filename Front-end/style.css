@@ -434,35 +434,22 @@ input[type=text]:focus {
   flex-direction: row-reverse;
 }
 
-/* =====================================================
-   CONTACT US SECTION
-===================================================== */
+/* Conatct Us section */
 
 #contactSection {
   width: 100%;
-    padding: 10px 0;
-    box-sizing: border-box;
+  padding: 10px 0;
 }
-
-
-/* Main Container */
 
 .contactContainer {
-  width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
 }
-
-
-/* =====================================================
-   HEADING
-===================================================== */
 
 .contactHeading {
   text-align: center;
   margin-bottom: 35px;
 }
-
 
 .contactHeading span {
   color: #d9a900;
@@ -471,7 +458,6 @@ input[type=text]:focus {
   letter-spacing: 2px;
 }
 
-
 .contactHeading h2 {
   color: #f7f4e9;
   font-family: Georgia, "Times New Roman", serif;
@@ -479,18 +465,12 @@ input[type=text]:focus {
   margin: 10px 0;
 }
 
-
 .contactHeading p {
   color: #d8dfd0;
   max-width: 550px;
   margin: auto;
   line-height: 1.6;
 }
-
-
-/* =====================================================
-   MAIN CONTACT CARD
-===================================================== */
 
 .contactMain {
   display: grid;
@@ -502,16 +482,10 @@ input[type=text]:focus {
   box-shadow:0 15px 40px rgba(0, 0, 0, 0.18);
 }
 
-
-/* =====================================================
-   IMAGE
-===================================================== */
-
 .contactImage {
   min-height: 500px;
   overflow: hidden;
 }
-
 
 .contactImage img {
   width: 100%;
@@ -521,21 +495,14 @@ input[type=text]:focus {
   transition: transform 0.6s ease;
 }
 
-
 .contactImage:hover img {
   transform: scale(1.07);
 }
-
-
-/* =====================================================
-   CONTACT INFORMATION
-===================================================== */
 
 .contactInfo {
   padding: 40px 30px;
   color: white;
 }
-
 
 .contactInfo > h3 {
   color: #e8b72d;
@@ -544,7 +511,6 @@ input[type=text]:focus {
   font-size: 22px;
 }
 
-
 .infoItem {
   display: flex;
   align-items: flex-start;  
@@ -552,7 +518,6 @@ input[type=text]:focus {
   padding: 14px 0;  
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-
 
 .infoIcon {
   min-width: 35px;
@@ -567,13 +532,11 @@ input[type=text]:focus {
   transition: 0.3s;
 }
 
-
 .infoItem:hover .infoIcon {
   transform: scale(1.15) rotate(5deg);
   background: #e8b72d;
   color: #09250d;
 }
-
 
 .infoItem h4 {
   margin: 0 0 4px;
@@ -581,28 +544,20 @@ input[type=text]:focus {
   font-size: 14px;
 }
 
-
 .infoItem p {
   margin: 0;
   font-size: 13px;
   color: #ffffff;
 }
 
-
 .infoItem small {
   color: #bfc8bb;
   font-size: 11px;
 }
 
-
-/* =====================================================
-   SOCIAL MEDIA
-===================================================== */
-
 .socialArea {
   margin-top: 20px;
 }
-
 
 .socialArea h4 {
   color: #e8b72d;
@@ -610,12 +565,10 @@ input[type=text]:focus {
   font-size: 14px;
 }
 
-
 .socialIcons {
   display: flex;
   gap: 10px;
 }
-
 
 .socialIcons a {
   width: 32px;
@@ -630,7 +583,6 @@ input[type=text]:focus {
   transition: all 0.3s ease;
 }
 
-
 .socialIcons a:hover {
   transform: translateY(-5px) scale(1.1);
   background: #e8b72d;
@@ -639,15 +591,10 @@ input[type=text]:focus {
 }
 
 
-/* =====================================================
-   CONTACT FORM
-===================================================== */
-
 .contactForm {
   padding: 40px 35px;
   color: white;
 }
-
 
 .contactForm h3 {
   color: #e8b72d;
@@ -656,20 +603,17 @@ input[type=text]:focus {
   margin-bottom: 25px;
 }
 
-
 .formRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 
-
 .formGroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 18px;
 }
-
 
 .formGroup label {
   color: #dce4d7;
@@ -696,23 +640,16 @@ input[type=text]:focus {
   color: #aeb8aa;
 }
 
-
 .formGroup input:focus, .formGroup textarea:focus {
   border-color: #e8b72d;
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 0 2px rgba(232, 183, 45, 0.12);
 }
 
-
 .formGroup textarea {
   resize: vertical;
   min-height: 100px;
 }
-
-
-/* =====================================================
-   SEND BUTTON
-===================================================== */
 
 .sendButton {
    padding: 12px 25px;
@@ -725,17 +662,11 @@ input[type=text]:focus {
    transition: all 0.3s ease;
 }
 
-
 .sendButton:hover {
   background: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
-
-
-/* =====================================================
-   BOTTOM FEATURES
-===================================================== */
 
 .contactFeatures {
   margin-top: 12px;
@@ -748,7 +679,6 @@ input[type=text]:focus {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-
 .featureBox {
   display: flex;
   align-items: center;
@@ -757,11 +687,9 @@ input[type=text]:focus {
   border-right: 1px solid #ddd;
 }
 
-
 .featureBox:last-child {
   border-right: none;
 }
-
 
 .featureIcon {
   min-width: 40px;
@@ -775,19 +703,16 @@ input[type=text]:focus {
   transition: 0.3s;
 }
 
-
 .featureBox:hover .featureIcon {
   transform: scale(1.15) rotate(8deg);
   background: #dce8b8;
 }
-
 
 .featureBox h4 {
   margin: 0 0 5px;
   color: #274d20;
   font-size: 13px;
 }
-
 
 .featureBox p {
   margin: 0;
