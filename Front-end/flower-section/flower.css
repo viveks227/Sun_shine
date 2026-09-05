@@ -1,106 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #8ba68b;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f7ef;
+  color: #173d1c;
 }
 
-button {
-  font-size: 25px;
-  color: blue;
-  background-color: beige;
-  border: 1px solid yellow;
-  border-radius: 5px;
-  margin-left: 5px;
-  box-shadow: 0 0 5px orange;
+#topBar {
+  height: 35px;
+  background-color: #123d0d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  font-size: 15px;
 }
 
-#show {
-  font-size: 30px;
-  background-color: aquamarine;
-}
-
-button:hover {
-  font-size: 27px;
-  color: red;
-  box-shadow: 0 0 10px red;
-  
-}
-
-#gallery {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  padding: 30px;
-  overflow: hidden;
-}
-
-.gallery-item {
-  height: 300px;
-  overflow: hidden;
+#heading {
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(225, 216, 167, 0.88), rgba(247, 238, 191, 0.88));
+  border-bottom: 1px solid #eee5c9;
   position: relative;
-  border-radius: 15px;
-  float: left;
-  margin: 2px;
-  margin-top: 25px;
-  
+  overflow: hidden;
 }
 
-.gallery-item img {
+#heading::before {
+  content: "🌻 🌼 🌿 🌸";
+  position: absolute;
+  left: -20px;
+  bottom: -25px;
+  font-size: 70px;
+  opacity: 0.20;
+  transform: rotate(-8deg);
+}
+
+#heading::after {
+  content: "🌿 🌻 🌼 🌿";
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  font-size: 65px;
+  opacity: 0.20;
+  transform: rotate(8deg);
+}
+
+#content {
+  position: relative;
+  z-index: 2;
+}
+
+#title {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #315b32;
+}
+
+#content h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  margin: 12px 0;
+  color: #172d17;
+}
+
+.sunIcon {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #d39b16;
+}
+
+#content p {
+  font-size: 19px;
+  color: #555;
+  margin-top: 8px;
+}
+
+#flowerPage {
+  width: 96%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 235px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+#sideBar {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e5e2d4;
+  border-radius: 20px;
+  padding: 19px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 20px;
+}
+
+#sideBar h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #245827;
+}
+
+.sideItem {
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 5px 5px;
+  margin: 2px 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #222;
+  transition: 0.3s;
+}
+
+.sideItem:hover {
+   background: #f1efd9;
+   transform: translateX(4px);
+}
+
+.sideItem.active {
+  background: #eeeac9;
+  color: #173d1c;
+  font-weight: bold;
+}
+
+#filterBox {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #ddd;
+}
+
+.colorFilter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.color:hover {
+  transform: scale(1.25);
+}
+
+.pink {
+    background: #ed9292;
+}
+
+.babyPink {
+    background: #f3b0bd;
+}
+
+.yellow {
+    background: #f6d579;
+}
+
+.orange {
+    background: #f2c75c;
+}
+
+.green {
+    background: #c5d88a;
+}
+
+.purple {
+    background: #c497df;
+}
+
+.blue {
+    background: #91b8e7;
+}
+
+.mint {
+    background: #a9d6c0;
+}
+
+#sortBox {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #ddd;
+}
+
+#sortBox h3 {
+  margin-bottom: 10px;
+}
+
+#sortBox select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+#offerBox {
+  margin-top: 20px;
+  padding: 20px 10px;
+  text-align: center;
+  border: 2px solid #d8c99d;
+  border-radius: 12px;
+  background: #f7f1dc;
+}
+
+#offerBox p {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+#offerBox h2 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #275429;
+}
+
+#offerBox span {
+  font-size: 13px;
+  color: #444;
+}
+
+
+.offerFlower {
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+#categoryBtn {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.category {
+  padding: 10px 17px;
+  border: 1px solid #ddd7c3;
+  background: #fffdf7;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.category:hover {
+  background: #f1edcf;
+  border-color: #c9b86a;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.category:active {
+  background: #eee8c9;
+  border-color: #d5c581;
+  font-weight: bold;
+}
+
+.flowerGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.flowerCard {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #ddd;
+  border: 3px solid #eee7d1;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform 0.4 ease, box-shadow 0.4s ease;
+}
+
+.flowerCard:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.flowerCard img {
   width: 100%;
   height: 100%;
-  transition: 0.5s;
+  display: block;
   object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
+.flowerCard:hover img {
+  transform: scale(1.08);
 }
 
-.caption {
+.imageOverlay {
   position: absolute;
-  bottom: 10px;
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  transition: 3s ease;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 15px 15px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+  color: white;
+  transform: translateY(0);
+  transition: 0.4s;
+}
+
+.imageOverlay h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 23px;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+.imageOverlay p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.zoomBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(20, 20, 20, 0.6);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
   opacity: 0;
-  font-size: 25px;
-  text-align: center;
+  transform: scale(0.7);
+  transition: 0.3s;
 }
 
-.gallery-item:hover .caption {
+.flowerCard:hover .zoomBtn {
   opacity: 1;
+  transform: scale(1);
 }
 
-.caption .sunflower {
-  color: rgb(251, 164, 3);
-}
-
-.caption .rose {
-  color: rgb(232, 47, 47);
-}
-
-.caption .daisy {
-  color: rgb(232, 124, 142);
-}
-
-.caption .hibiscus {
-  color: rgb(229, 117, 6);
-}
-
-.caption .jasmin {
-  color: rgb(245, 222, 179);
-}
-
-.caption .lily {
-  color: rgb(211, 78, 78);
-}
-
-.caption .lotus {
-  color: rgb(255, 192, 203);
-}
-
-.caption .orchid {
-  color: rgb(212, 102, 212);
-}
-
-.caption .tulip {
-  color: rgb(207, 124, 64);
+.zoomBtn:hover {
+  background: white;
+  color: #173d1c;
+  transform: scale(1.1);
 }
