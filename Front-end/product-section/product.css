@@ -100,8 +100,12 @@ body {
 #checkBox label {
   display: block;
   font-size: 15px;
-  margin: 9px 0;
+  margin: 9px 10px;
   color: #333;
+}
+
+#checkBox h3, #filterBox h3 {
+  margin-left: 10px;
 }
 
 #filterBox select {
