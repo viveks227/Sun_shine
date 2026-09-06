@@ -560,51 +560,60 @@ body {
 
 #contactSection {
   width: 100%;
-  padding: 10px 0;
+  background: linear-gradient(180deg, #9cb8a5 0%, #688e73 15%, #355f41 35%, #183e25 60%, #102d1a 100%);
+  padding: 85px 0 95px;
+  margin: 0;
+  position: relative;
 }
 
 .contactContainer {
-  width: 90%;
+  width: 92%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
 .contactHeading {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .contactHeading span {
-  color: #d9a900;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  color: #f1bf43;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  display: inline-block;
 }
 
 .contactHeading h2 {
   color: #f7f4e9;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 42px;
-  margin: 10px 0;
+  font-size: 45px;
+  margin: 12px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .contactHeading p {
   color: #d8dfd0;
-  max-width: 550px;
+  max-width: 590px;
   margin: auto;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .contactMain {
   display: grid;
-  grid-template-columns: 1fr 1.05fr 1.4fr;
-  background: #09250d;
+  grid-template-columns: 1fr 1.1fr 1.4fr;
+  background: #0b2213;
   border-radius: 25px;
   overflow: hidden;
-  min-height: 500px;
-  box-shadow:0 15px 40px rgba(0, 0, 0, 0.18);
+  min-height: 520px;
+  box-shadow:0 15px 40px rgba(230, 185, 61, 0.25);
 }
 
 .contactImage {
+  height: 100%;
   min-height: 500px;
   overflow: hidden;
 }
@@ -706,12 +715,11 @@ body {
 }
 
 .socialIcons a:hover {
-  transform: translateY(-5px) scale(1.1);
+  transform: translateY(-5px) scale(1.3);
   background: #e8b72d;
   color: #09250d;
   border-color: #e8b72d;
 }
-
 
 .contactForm {
   padding: 40px 35px;
@@ -748,7 +756,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 12px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   outline: none;
   background: rgba(255, 255, 255, 0.04);
@@ -765,7 +773,7 @@ body {
 .formGroup input:focus, .formGroup textarea:focus {
   border-color: #e8b72d;
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 2px rgba(232, 183, 45, 0.12);
+  box-shadow: 0 0 0 3px rgba(232, 183, 45, 0.12);
 }
 
 .formGroup textarea {
@@ -774,37 +782,40 @@ body {
 }
 
 .sendButton {
-   padding: 12px 25px;
+   padding: 13px 30px;
    border: none;
-   border-radius: 5px;
-   background: #e8b72d;
+   border-radius: 8px;
+   background: linear-gradient(135deg, #f5c542 0%, #e8a900 100%);
    color: #09250d;
    font-weight: bold;
    cursor: pointer;
    transition: all 0.3s ease;
+   box-shadow: 0 5px 15px rgba(245, 197, 66, 0.3);
 }
 
 .sendButton:hover {
   background: #ffffff;
+  color: #09252d;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.35);
 }
 
 .contactFeatures {
-  margin-top: 12px;
+  margin-top: 30px;
   background: #fdfcf7;
-  border-radius: 12px;
-  padding: 18px;
+  border-radius: 18px;
+  padding: 22px 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(120, 160, 130, 0.25);
 }
 
 .featureBox {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   padding: 10px;
   border-right: 1px solid #ddd;
 }
@@ -822,7 +833,7 @@ body {
   border-radius: 50%;
   background: #eef2d8;
   font-size: 19px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .featureBox:hover .featureIcon {
