@@ -398,43 +398,53 @@ body {
 /*Gallery Section */
 
 #galleryS {
-  background-color: hsla(120, 28%, 59%, 40%);
+  width: 100%;
+  background: linear-gradient(180deg, #f1ebdc 0%, #e3ece1 15%, #d8e6d5 45%, #cfdfcc 75%, #d5dfd4 100%);
+  padding: 88px 0 95px;
+  margin: 0;
+  position: relative;
 }
 
 #gallerySection {
-  width: 80%;
-  max-width: 1200px;
-  margin: 30px auto;
-  border-radius: 20px;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0px auto;
 }
 
 #gallerySection #title {
   text-align: center;
-  font-size: 50px;
-  color: rgb(31, 86, 213);
+  font-size: 42px;
+  color: green;
   font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 45px 1px;
 }
 
 .flowerRow {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin: 50px 0 25px 0;
+  gap: 40px;
+  margin: 35px 0;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 0 20px green; 
+  box-shadow: 0 12px 35px rgba(26, 67, 37, 0.09);
+  border: 1px solid rgba(140, 180, 145, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.flowerRow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(26, 67, 37, 0.16);
 }
 
 .flowerText {
   width: 65%;
   padding: 40px 100px;
-  display: inline-block;
 }
 
 .flowerText span {
   color: #e8a900;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -442,59 +452,63 @@ body {
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-  margin-left: 15px;
-  font-size: 32px;
+  margin-left: 12px;
+  font-size: 30px;
   color: green;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .flowerText p {
   margin-top: 95px;
   text-align: justify;
-  font-family: "Times New Roman", Times, serif;
-  margin: 20px 0;
-  line-height: 1.7;
-  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 18px 0 24px;
+  line-height: 1.75;
+  font-size: 18px;
   color: #333;
 }
 
 .flowerImg {
   width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
-
-
-
 
 .flowerImg img {
   height: 50vh;
-  width: 25vw;
+  width: 100%;
+  max-width: 430px;
   display: block;
   object-fit: cover;
-  border: 2px solid black;
-  border-radius: 20px;
-  box-shadow: 0 0 20px green; 
+  border: 2px solid rgba(40, 90, 50, 0.15);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(26, 67, 37, 0.3); 
   transition: 0.5s ease;
 }
 
 .flowerImg img:hover {
-  transform: scale(1.1);
+  transform: scale(1.09);
 }
 
 .flowerText button {
-  background-color: green;
+  background: linear-gradient(135deg, rgb(38, 161, 38) 0%, rgb(39, 157, 39) 100%);
   color: white;
-  border: 1px solid green;
-  border-radius: 5px;
+  border: none;
+  border-radius: 9px;
   cursor: pointer;
-  margin: 20px 0 0 30px;
+  margin: 20px 0 0 0px;
   font-size: 15px;
-  padding: 12px 20px;
-  box-shadow: 0 0 10px green; 
+  padding: 13px 28px;
+  box-shadow: 0 4px 15px rgba(28, 82, 43, 0.25);
+  transition: all 0.3s ease;
 }
 
 .flowerText button:hover {
-  background-color: orange;
-  color: white;
-  border: 1px solid orange;
+  background: linear-gradient(135deg, #e59a16 0%, #d48b04 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 139, 4, 0.35);
 }
 
 .flowerRow.reverse {
