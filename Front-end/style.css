@@ -196,51 +196,54 @@ body {
   margin: 0 auto;
 }
 
-
-
 /* About-Us Section */
 
 #aboutSection {
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: 0;
   background: linear-gradient(180deg, #f3e8ce 0%, #fbedd1 22%, #f8e8c8 70%, #f1ebdc 100%);
   padding: 70px 0 95px;
   position: relative;
 }
 
-#aboutHeading, #serviceHeading {
+#aboutHeading {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+  padding: 0 20px;
 }
 
-#aboutHeading, #serviceHeading span {
-  color: #e8a900;
+#aboutHeading span {
+  color: #d48b04;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-#aboutHeading h2, #serviceHeading h2 {
-  color: #245c20;
-  font-size: 40px;
+#aboutHeading h2 {
+  color: #1f501e;
+  font-size: 42px;
   margin: 10px 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sunflowerIcon {
-  font-size: 25px;
+  font-size: 29px;
   margin-top: 10px;
 }
 
 #aboutContent {
+  width: 92%;
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 50px;
-  background-color: #fffdf5;
-  padding: 40px;
+  background-color: #ffffff;
+  padding: 45px 50px;
   border-radius: 25px;
-  box-shadow: 0 0px 25px rgba(0, 0, 0,0.7);
+  box-shadow: 0 15px 40px rgba(180, 130, 20, 0.12);
+  border: 1px solid rgba(224, 159, 20, 0.22);
 }
 
 #abouText {
@@ -248,39 +251,45 @@ body {
 }
 
 #aboutStory {
-  color: #e8a900;
-  font-size: 25px;
+  color: #d48b04;
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 #aboutText h3 {
-  color: #245c20;
-  font-size: 34px;
-  line-height: 1.3;
-  margin: 15px 0 25px;
+  color: #1f501e;
+  font-size: 32px;
+  line-height: 1.35;
+  margin: 15px 0 20px;
   font-family: Georgia, serif;
 }
 
 .aboutText p {
-  color: #444;
-  font-size: 17px;
-  line-height: 1.7;
+  color: #4c4438;
+  font-size: 15px;
+  line-height: 1.75;
   margin-bottom: 15px;
 }
 
 .aboutHighlight {
   display: flex;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 16px;
+  margin-top: 25px;
 }
 
 .highlight {
   flex: 1;
+  background: #fffdf7;
+  padding: 16px 14px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid #f2e9d2;
 }
 
 .highlight span {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 .highlight h4 {
@@ -290,48 +299,31 @@ body {
 }
 
 .highlight p {
-  font-size: 17px;
-  line-height: 1.4;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #635b4f;
+  margin-bottom: 0;
 }
 
 #aboutImg {
   width: 50%;
   position: relative;
   overflow: hidden;
-  border-radius: 25px;
-  border: 2px solid rgba(235, 163, 19, 0.925);
-  box-shadow: 0 0 10px rgba(255, 166, 0, 0.868);
+  border-radius: 22px;
+  border: 2px solid rgba(234, 159, 20, 0.45);
+  box-shadow: 0 12px 35px rgba(180, 130, 20, 0.2);
 }
 
 #aboutImg img {
   width: 100%;
-  height: 500px;
+  height: 480px;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
 #aboutImg:hover img {
-  transform: scale(1.08);
-}
-
-#aboutImgText {
-  position: absolute;
-  left: 60px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: green;
-}
-
-#aboutImgText h2 {
-  font-size: 60px;
-  font-family: cursive;
-  margin: 0;
-}
-
-#aboutImgText p {
-    font-size: 25px;
-    margin: 0;
+  transform: scale(1.06);
 }
 
 /* Service section */
