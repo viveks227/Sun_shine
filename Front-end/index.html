@@ -16,37 +16,52 @@
         
     </div>
 
-    <div class="navbar">
+    <header class="navbar" id="mainNavbar">
+        <div class="navContainer">
 
-        <div class="links">
-            <a href="#homePage" id="home">Home</a>
-            <a href="#aboutSection" id="about">About Us</a>
-            <a href="#gallerySection" id="gallery">Gallery</a>
-            <a href="flower-section/flower.html" id="flower" target="_self">Flower</a>
-            <a href="product-section/product.html" id="product" target="_blank">Product</a>
-            <a href="#serviceSection" id="services">Services</a>
-            <a href="#contactSection" id="contact">Contact us</a>
-        </div>
-
-        <div class="searchButton">
-            <a id="search"> 
-                <input type="text" name="search" placeholder="Search..."> 
-                <i class="fa fa-search"></i>
-            </a>
-        </div>
-
-        <div class="buttons">
-            <a class="notification">
-                <span title="Cart"></span>
-                <i class="fa fa-shopping-cart"></i>
-                <span class="badge">3</span>
+            <a href="#homePage" class="navLogo" title="Sun_shine">
+                <img src="flower-img/sunflower2.jpg" alt="Sun_shine Logo" class="logoImg" id="navLogoImg" width="36" height="36"/>
+                <span id="logoTitle">Sun_shine</span>
             </a>
 
-            <a id="login" href="login/login.html">
-                <span title="Login">Login</span>
-                <i class="fa fa-user"></i> </a>
+            <div class="links">
+                <a href="#homePage" id="home" class="active">Home</a>
+                <a href="#aboutSection" id="about">About Us</a>
+                <a href="#gallerySection" id="gallery">Gallery</a>
+                <a href="flower-section/flower.html" id="flower" target="_self">Flower</a>
+                <a href="product-section/product.html" id="product" target="_blank">Product</a>
+                <a href="#serviceSection" id="services">Services</a>
+                <a href="#contactSection" id="contact">Contact us</a>
+            </div>
+
+            <div class="navActions">
+                <div class="searchButton">
+                    
+                    <div id="search">
+                            <input type="text" name="search" placeholder="Search..."> 
+                            <i class="fa fa-search" title="Search"></i>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a class="notification" id="wishlist" title="Wishlist" href="#wishlist">
+                        <i class="fa fa-heart"></i>
+                        <span class="badge">0</span>
+                    </a>
+                    
+                    <a class="notification" title="View Cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="badge">3</span>
+                    </a>
+
+                    <a id="login" href="login/login.html" title="Login">
+                        <i class="fa fa-user"></i> 
+                        <span>Login</span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
     <section id="homeIntro">
         <div id="intro">
@@ -646,9 +661,6 @@
         </div>
     </div>
 </footer>
-
-
-
 
 </body>
 </html>
