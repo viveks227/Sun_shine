@@ -860,7 +860,7 @@ body {
 
 #webFooter {
   width: 100%;
-  background: #082b13;
+  background: linear-gradient(180deg, #102d1a 0%, #0c2013 30%, #07150c 100%);
   color: #ffffff;
   margin-top: 0;
   box-sizing: border-box;
