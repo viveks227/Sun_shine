@@ -15,7 +15,7 @@ html {
 #gallerySection,
 #serviceSection,
 #contactSection {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 72px;
 }
 
 html, body {
@@ -30,6 +30,7 @@ body {
   background-color: #fbf7ee;
   color: #333333;
   overflow-x: hidden;
+  min-height: 550px;
 }
 
 #homePage {
@@ -58,7 +59,7 @@ body {
 
 .navContainer {
   max-width: 1450px;
-  height: 58px;
+  height: 70px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -71,40 +72,70 @@ body {
 .navLogo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   flex-shrink: 0;
   line-height: 1;
 }
 
-.logoImg,
-#navLogoImg,
-.navLogo img {
-  width: 36px !important;
-  height: 36px !important;
-  max-width: 36px !important;
-  max-height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  border: 2px solid #e8a900 !important;
-  box-shadow: 0 2px 8px rgba(232, 169, 0, 0.4);
-  display: inline-block !important;
-  transition: transform 0.3s ease;
-  vertical-align: middle;
+.logoBadge {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  min-height: 58px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #ffffff;
+  border: 2px solid #e8a900;
+  box-shadow: 0 2px 12px rgba(232, 169, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+
+#navLogoImg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  display: block;
+  border: none;
+  box-shadow: none;
+}
+
+.logoBrandText {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1;
 }
 
 #logoTitle {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 21px;
   font-weight: 700;
   color: #f7d070;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   line-height: 1;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   margin: 0;
   padding: 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+#subTitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #dfcaa4;
+  opacity: 0.9;
+  line-height: 1;
 }
 
 .links {
