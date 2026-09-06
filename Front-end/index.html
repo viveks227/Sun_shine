@@ -428,7 +428,7 @@
 
                             <label>Your Name</label>
 
-                            <input type="text" placeholder="Enter your name" required/>
+                            <input type="text" placeholder="Enter your name" id="name" required/>
 
                         </div>
 
@@ -437,7 +437,7 @@
 
                             <label>Your Email</label>
 
-                            <input type="email" placeholder="Enter your email" required/>
+                            <input type="email" placeholder="Enter your email" id="mail" required/>
 
                         </div>
 
@@ -448,7 +448,7 @@
 
                         <label>Subject</label>
 
-                        <input type="text" placeholder="What is this about?"/>
+                        <input type="text" placeholder="What is this about?" id="subject"/>
 
                     </div>
 
@@ -457,11 +457,11 @@
 
                         <label>Your Message</label>
 
-                        <textarea rows="5" placeholder="Write your message here..."/></textarea>
+                        <textarea rows="5" placeholder="Write your message here..." id="mesg"></textarea>
                     </div>
 
 
-                    <button type="submit" class="sendButton">
+                    <button type="button" class="sendButton" onclick="clearN()">
                         ✈ Send Message
                     </button>
                 </form>
