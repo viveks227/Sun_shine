@@ -10,6 +10,32 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#returnHome {
+    width: 20%;
+    border-radius: 20px;
+    background: #444;
+    margin-top: 30px;
+    padding: 10px 30px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(236, 3, 3, 0.974);
+}
+
+#returnHome:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(13, 237, 88, 0.406);
+}
+
+#returnHome a {
+    text-decoration: none;
+} 
+
+#returnHome p {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .form-card {
     width: 420px;
     margin: 60px auto;
