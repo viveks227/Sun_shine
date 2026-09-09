@@ -1,0 +1,6 @@
+# robots.txt for Sun_shine
+User-agent: *
+Allow: /
+Disallow: /login/
+# Sitemap location
+Sitemap: https://viveks227.github.io/Sun_shine/sitemap.xml
