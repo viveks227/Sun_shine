@@ -1,0 +1,47 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        
+  <!-- Homepage -->
+  <url>
+    <loc>https://viveks227.github.io/Sun_shine/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://viveks227.github.io/Sun_shine/image/sun_shineLogo.png</image:loc>
+      <image:title>Sun_shine - The Sunflower Website</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://viveks227.github.io/Sun_shine/flower-img/sunflower2.jpg</image:loc>
+      <image:title>Fresh Golden Sunflower Bouquet</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product Section -->
+  <url>
+    <loc>https://viveks227.github.io/Sun_shine/product-section/product.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://viveks227.github.io/Sun_shine/product-section/product-img/sunflower_bouguet.jpg</image:loc>
+      <image:title>Handcrafted Fresh Sunflower Bouquet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://viveks227.github.io/Sun_shine/product-section/product-img/sunflower_gift_hamper.jpg</image:loc>
+      <image:title>Sunflower Luxury Gift Hamper</image:title>
+    </image:image>
+  </url>
+
+  <!-- Flower Section / Botanical Guide -->
+  <url>
+    <loc>https://viveks227.github.io/Sun_shine/flower-section/flower.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://viveks227.github.io/Sun_shine/flower-img/sunflower3.jpg</image:loc>
+      <image:title>Botanical Sunflower Varieties</image:title>
+    </image:image>
+  </url>
+</urlset>
