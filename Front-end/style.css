@@ -262,6 +262,9 @@ body {
   text-decoration: none;
   width: 36px;
   height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  flex-shrink: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -271,6 +274,7 @@ body {
   transition: all 0.25s ease;
   font-size: 14px;
   line-height: 1;
+  box-sizing: border-box;
 }
 
 .notification:hover {
@@ -286,13 +290,13 @@ body {
   top: -3px;
   right: -3px;
   padding: 2px 6px;
-  border-radius: 50%;
+  border-radius: 10px;
   background: #d9534f;
   color: white;
   font-size: 10px;
   font-weight: 700;
   line-height: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a#login {
